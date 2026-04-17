@@ -120,7 +120,7 @@ STATIC_URL = 'static/'
 
 #MEDIA_URL = 'media/' (allowing media files to be uploaded to the server)
 
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    )
+]
 

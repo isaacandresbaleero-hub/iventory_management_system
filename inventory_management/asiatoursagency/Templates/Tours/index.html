@@ -1,9 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asia Tours</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+
 </head>
 <body>
     <h1>Asia Tours Schedule for june 2026</h1>
@@ -14,6 +17,7 @@
 </li>
 {% endfor %}
    </ul>
-
+    <script src="{% static 'scripts/scripts.js' %}"></script>
+    <img src="{% static 'images/logo.png' %}" alt="Asia Tours Logo">
 </body>
 </html> 
