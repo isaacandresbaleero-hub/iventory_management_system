@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Tour
+from django.shortcuts import render, redirect
+from .models import Tour, Tourform 
 
 
 # Create your views here.
@@ -10,3 +10,13 @@ def index(request):
         'tours': tours
     }   
     return render(request, 'Tours/index.html', context)
+
+def contact(request):
+    if request.method == 'POST':
+        form = Tourform(request.POST)
+        if form.is_valid():
+            form.send_email()
+            return redirect('index')
+    else:
+        form = Tourform()
+    return render(request, 'Tours/contact.html', {'form': form})okk

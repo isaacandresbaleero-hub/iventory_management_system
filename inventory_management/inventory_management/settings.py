@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'asiatoursagency.apps.AsiatoursagencyConfig',
+    'authApps.apps.AuthappsConfig',
 ]
 
 MIDDLEWARE = [
@@ -117,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
 
 #MEDIA_URL = 'media/' (allowing media files to be uploaded to the server)
 
