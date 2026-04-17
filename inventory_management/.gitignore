@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database (Keep your local data local!)
+db.sqlite3
+
+# Virtual Environment
+env/
+venv/
+ENV/
+
+# Static files and Media
+staticfiles/
+media/
+
+# Environment variables
+.env
